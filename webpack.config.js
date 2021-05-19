@@ -65,7 +65,7 @@ module.exports = (env, argv) => {
     config.plugins.push(
         new CompressionPlugin({
             filename: argv.mode === 'development' ? '[path].gz' :'[path]',
-            test: /\.js$|\.css$|\.html$/,
+            test: /\.js$|\.css$/,
             algorithm: 'gzip',
             deleteOriginalAssets: false
         })
