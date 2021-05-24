@@ -27,7 +27,7 @@ const Configuration = {
           return Leaflet.circleMarker (latlng, gulliesStyle (feature))
       }
     },
-    displayOverlay: true,
+    displayOverlay: false,
     visibleByDefault: true
   },
     {
